@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: gthub-runner
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
@@ -24,9 +24,9 @@ jobs:
         run: |
           az account show
           
-      - name: Setup Terraform
-      - uses: hashicorp/setup-terraform@v3
-
+      - name: setup Terraform
+        uses: hashicorp/setup-terraform@v3
+ 
       - name: Terraform Version
         run: terraform version
 
