@@ -7,7 +7,11 @@ terraform {
     }
  } 
 
- provider "resource_group" "rg1" {
+provider "azurerm" {
+  features {}
+}
+
+resource "azurerm_resource_group" "rg1" {
  name = "rg-tej-github"
  location = "eastus"
 }
