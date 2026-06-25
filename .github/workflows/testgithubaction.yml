@@ -24,8 +24,8 @@ jobs:
         run: |
           az account show
           
-      - name: setup Terraform
-        uses: hashicorp/setup-terraform@v3
+    #  - name: setup Terraform
+     #   uses: hashicorp/setup-terraform@v3
  
       - name: Terraform Version
         run: terraform version
