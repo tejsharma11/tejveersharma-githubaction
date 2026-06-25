@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: gthub-runner
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
@@ -23,6 +23,23 @@ jobs:
       - name: Verify Login
         run: |
           az account show
+          
+      - name: Setup Terraform
+      - uses: hashicorp/setup-terraform@v3
 
+      - name: Terraform Version
+        run: terraform version
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Validate
+        run: terraform validate
+
+      - name: Terraform Plan
+        run: terraform plan
+
+      - name: terraform apply
+        run: terraform apply -auto-approve
 
     
