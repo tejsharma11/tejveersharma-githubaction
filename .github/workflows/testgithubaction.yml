@@ -18,7 +18,7 @@ jobs:
     
       - name: Login using Service Principal
         run: |
-          az login --service-principal -u 50b13126-3623-4f02-b5de-ecd6577ce08c -p abbb49b1-431c-4645-a004-9d814f6f51c6 --tenant 62e3ed0a-e36b-449c-a4c5-9a7fa5b20d71
+          az login --service-principal -u 50b13126-3623-4f02-b5de-ecd6577ce08c -p rzB8Q~lkF9w3w02xRZv9.yHkyn6prLkuGNnIvaMm --tenant 62e3ed0a-e36b-449c-a4c5-9a7fa5b20d71
 
       - name: Verify Login
         run: |
